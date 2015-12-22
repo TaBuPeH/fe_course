@@ -1,0 +1,7 @@
+.reddiv {
+    height: 150px;
+    width: 150px;
+    background: red;
+    float: left;
+    margin-right: 50px;
+}
