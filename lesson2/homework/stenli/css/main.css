@@ -1,0 +1,36 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+
+}
+.container
+{
+	width: 60px;
+	height: 60px;
+	margin:1% 0 0 1%;
+	background-color: red;
+	float: left;
+	border: 1px solid;
+	border-color: transparent;
+	border-radius: 50%;
+	font-size: 33px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.startButton
+{
+	width: 60%;
+	margin: 3% 19%;
+	background-color: red;
+	color: #fff;
+	border: 1% solid red;
+	border-radius: 2%;
+	border-collapse: none;
+}
+.startButton:hover
+{
+	background-color: #fff;
+	color: red;
+}
