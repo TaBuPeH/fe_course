@@ -21,7 +21,7 @@ function init () {
 
 	for (i=1; i<50; i++)
 	{
-		rand = Math.floor(Math.random()*49);
+		rand = Math.floor(Math.random()*48)+1;
 		temp = nums [i];
 		nums[i] = nums[rand];
 		nums[rand] = temp;
@@ -46,7 +46,7 @@ function init () {
 function clear() {
         var myNode = document.getElementById("panel");
 		var fc = myNode.firstChild;
-
+        //myNode.innerHTML = '';
 		while( fc ) {
 		    myNode.removeChild( fc );
 		    fc = myNode.firstChild;

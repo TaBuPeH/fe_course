@@ -8,7 +8,10 @@ while (numbers.length < 6) {
       alert ('Изтегленото числото е: '+select)
    }
 
-   document.getElementById('first').innerHTML=numbers[0]
+   if(typeof(numbers[0])!=='undefined')
+   {
+	   document.getElementById('first').innerHTML=numbers[0]
+   }
    document.getElementById('second').innerHTML=numbers[1]
    document.getElementById('third').innerHTML=numbers[2]
    document.getElementById('fourth').innerHTML=numbers[3]

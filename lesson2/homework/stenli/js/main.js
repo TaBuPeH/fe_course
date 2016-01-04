@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	var iztegleni = Array();
-	iztegleni.length=0;
+	//iztegleni.length=0;
 	do
 	{
 		var tempResult = Math.floor(Math.random()*48) + 1;

@@ -34,6 +34,7 @@ for(var i = 0; i < 6; i++) {
       number = Math.floor(Math.random() * 48) + 1;
    }
    while(numbers.indexOf(number) != -1);
+   
    numbers[i] = number;
 }
 
