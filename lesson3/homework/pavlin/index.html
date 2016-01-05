@@ -1,0 +1,61 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>kafe</title>
+<style>
+*{font-size: 22px;
+width: 400px;
+text-align: center;
+}
+</style>
+    </head>
+    <body>
+	
+	<div>
+	<input type="button" id="10" value="10 стотинки" onclick="sum(10)"></br>
+	<input type="button" id="20" value="20 стотинки" onclick="sum(20)"></br>
+	<input type="button" id="50" value="50 стотинки" onclick="sum(50)"></br>
+	<input type="button" id="100" value="100 стотинки" onclick="sum(100)"></br>
+	</div>
+	<div id="suma">Сума: 0</div>
+	
+	<div>
+	<input type="button" id="10" value="Кафе (30 стотинки)" onclick="sub(30)"></br>
+	<input type="button" id="20" value="Кафе със сметана (40 стотинки)" onclick="sub(40)"></br>
+	<input type="button" id="50" value="Шоколад (50 стотинки)" onclick="sub(50)"></br>
+	</div>
+	<div id="dylg1">Дълг: 0</div><hr>
+	
+	<input type="button" id="50" value="Поръчай" onclick="resto()"></br>
+	
+	
+		<script>
+		var suma=0;
+		function sum(a1){
+		suma = suma + a1;
+		document.getElementById("suma").innerHTML = "Сума: "+suma;
+		}
+		
+		var dylg=0;
+		function sub(a1){
+		dylg = dylg + a1;
+		document.getElementById("dylg1").innerHTML = "Дълг: "+dylg;
+		}
+		
+		
+		function resto(a1) {
+		a1=suma-dylg;
+		alert("Ресто: "+a1);
+		suma = 0;
+		dylg = 0;
+		document.getElementById("suma").innerHTML = "Сума: "+0;document.getElementById("dylg1").innerHTML = "Дълг: "+0;
+		}
+		</script>
+    </body>
+    
+</html>
