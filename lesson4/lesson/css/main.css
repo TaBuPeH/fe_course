@@ -1,0 +1,17 @@
+input[type='checkbox']
+{
+	position: absolute;
+}
+
+#ourCbList
+{
+	position: relative;
+	height: 20px;
+}
+
+#myRedDiv
+{
+	width: 50%;
+	height: 200px;
+	background-color: #f00;
+}

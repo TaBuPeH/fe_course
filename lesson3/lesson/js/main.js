@@ -40,7 +40,7 @@ var numbers = Array();
  * **/
 
 
-/*
+
 
 
 var a = 5;
@@ -49,16 +49,14 @@ var z;
 
 function x()
 {
-    a = 7;
+    var a = 7;
 	alert(a);
-
+	
 	z = function()
 	{
-	    a = 9;
+	    var a = 9;
 		alert(a);
 	}
-	
-	
 }
 
 x();
@@ -67,6 +65,22 @@ alert(a);
 
 //alert(a);
 
+
+
+/*
+
+var x =0;
+
+function s()
+{
+	x = 1;
+	alert(x);
+}
+
+alert(x);
+s();
+alert(x);
+*/
 
 
 /* Домашна работа
@@ -100,9 +114,6 @@ alert(a);
 
 
 
-
-
-*/
 
 
 
