@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded',function(event){
 	var totalPrice=0;
 	
 	function payMoney(){
-	price = this.value;
-	amount.push(price);
-	for (i=0;i<amount.length;i++)
-    {
-        totalPrice += parseFloat(amount[i]);
-    }
+		price = this.value;
+		amount.push(price);
+		
+		for (i=0;i<amount.length;i++)
+	    {
+	        totalPrice += parseFloat(amount[i]);
+	    }
 	}
 	
 	var totalDrinks=0;
