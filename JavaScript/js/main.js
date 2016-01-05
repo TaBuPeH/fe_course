@@ -16,7 +16,7 @@ var sum = [0.1, 0.2, 0.5, 1, 2];
 
 var credit = [];
 
-var result
+var result = 0;
 
 function writeIn() {
 
@@ -55,7 +55,7 @@ function makeItRain()
 
 		document.getElementById('text').value = 'Change:'+parseFloat(end);
 
-	}, 6000);
+	}, 1000);
 
 
 	for (i=0; i<5; i++)

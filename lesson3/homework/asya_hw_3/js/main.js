@@ -1,4 +1,5 @@
 var sum = 0;
+var change = 0;
 
 function insertCoin(coin) {
   sum += coin;
@@ -6,15 +7,13 @@ function insertCoin(coin) {
 };
 
 
-
-var change = 0;
-
 function orderCoffee(price) {
   sum -= price;
   if (sum < 0) {
     document.getElementById("change").innerHTML = "Наличната сума не е достатъчна! Вземете вашето ресто!" ;
   } else {
-    document.getElementById("change").innerHTML = "Вашата напитка се приготвя " + setTimeout(moreDrinks, 2000);
+    document.getElementById("change").innerHTML = "Вашата напитка се приготвя ";
+    setTimeout(moreDrinks, 2000);
   }
 };
 
@@ -34,5 +33,10 @@ function takeChange() {
 
 
 function clear() {
-  location.reload()
+	sum = 0;
+	change = 0;
+	
+	document.getElementById("sum").innerHTML = "СУМА";
+	document.getElementById("change").innerHTML = "РЕСТО";
+  //location.reload()
 };
