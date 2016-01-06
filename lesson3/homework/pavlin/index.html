@@ -50,10 +50,12 @@ text-align: center;
 		
 		function resto(a1) {
 		a1=suma-dylg;
+		if(a1>=0){
 		alert("Ресто: "+a1);
 		suma = 0;
 		dylg = 0;
 		document.getElementById("suma").innerHTML = "Сума: "+0;document.getElementById("dylg1").innerHTML = "Дълг: "+0;
+		}else {alert("Невалидна поръчка");}
 		}
 		</script>
     </body>
