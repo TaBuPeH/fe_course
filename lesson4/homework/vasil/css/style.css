@@ -1,0 +1,31 @@
+.item{
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.footer{
+	height: 150px;
+	background-color: #399CBD;
+	margin-bottom: 10px;
+}
+
+.footer h1{
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.pictureLink{
+	display: block;
+	
+}
+
+.deleteLink{
+	position: absolute;
+	width: 10%;
+	top: -10px;
+	right: -10px;
+}
+
