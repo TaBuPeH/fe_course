@@ -32,9 +32,7 @@ var col= new Array("#456333", "#298888", "yellow", "purple" ,"black", "orange", 
 				$("#container").append(str);
 			}
 			
-		$("#container").gridalicious({width: 225});
-		$("#container").gridalicious({gutter: 20});
-		$("#container").gridalicious({selector: 'div'});
+		$("#container").gridalicious({width: 225,selector: 'div',gutter: 20});
 	}
 	
 	run();
@@ -42,7 +40,7 @@ var col= new Array("#456333", "#298888", "yellow", "purple" ,"black", "orange", 
 	
 });
 
-$(".me").click(function() {alert(1);}); // ?not working!?
+$(document).on('click',".me",function() {alert(1);}); // ?not working!?
 </script>
 </body>
 </html>
