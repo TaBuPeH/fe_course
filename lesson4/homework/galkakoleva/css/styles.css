@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body, h1, h2, h3, p, ul, input, form, textarea, button, input[type="submit" i], input {
+	padding: 0;
+	margin: 0;
+  border: 0;
+}
+
+html {
+	height: 100%;
+}
+
+
+
+/*****  Clearfix ******/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+/******** ***********/
+
+body{
+ 
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#container {
+   /* margin: 10px auto 0px;
+    padding: 20px 0px 0px;*/
+    border: 1px solid #E2E2E2;
+ /*   background: #777777 none repeat scroll 0% 0%;*/
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+ /* #device {
+    margin: 10px auto 0px;
+    background-color: #777777 none repeat scroll 0% 0%;
+  }*/
+
+.imgremove {
+  padding:2px;
+  margin:0px;
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+}
