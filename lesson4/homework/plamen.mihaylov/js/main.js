@@ -12,8 +12,6 @@ $("#device").gridalicious({
     },
 });
 
-$("#container").gridalicious({selector: '.wrapper'});
-
 
 
 $('.close').click(function(){
@@ -23,8 +21,10 @@ $('.close').click(function(){
 		if($(this).is(":focus"))
 		{
 			
-			$(this).parentsUntil(".item").remove();
+			$(this).closest(".item").css({display:"none",padding: "0px"});
 			
+			
+
 		}
 	});
 		
