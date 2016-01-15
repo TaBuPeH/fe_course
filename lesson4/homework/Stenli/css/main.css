@@ -1,0 +1,32 @@
+body, html
+{
+	margin: 0;
+	padding: 0;
+}
+#container
+{
+	width: 100%;
+	overflow: hidden;
+}
+.item
+{
+	width: 100%;
+	margin: 1%;
+	float: left;
+	position: relative;
+}
+.item img
+{
+	display: block;
+	width: 100%;
+}
+.close, .nope
+{
+	width: 20px;
+	background-color: #f00;
+	color: #fff;
+	border: none;
+	position: absolute;
+	top: 1%;
+	right: 1%;
+}

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+<title>GRID</title><style>body{margin: 122px;}div{-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;}*{text-align: center;font-size: 18px;color: white;text-decoration: underline;}</style>
+</head>
+<body><!--dynamic html with jQuery -->
+<script src="jquery-2.1.4.min.js"></script>
+<script src="jquery.grid-a-licious.js"></script>
+<script>
+$('document').ready(function(){
+
+var col= new Array("#456333", "#298888", "yellow", "purple" ,"black", "orange", "black", "pink", "lightblue");
+
+	function run() {
+		
+		$('body').empty();
+		$('body').append('<div id="container"></div>');
+			
+			for(var i = 0; i< 110; i++) {
+				var rnd = Math.random()*500;
+				var str = '<div class="me" style="height: '+rnd+'px; border: 2px solid;background-color: '+col[Math.ceil(Math.random()*9)-1]+';">'+Math.ceil(rnd*99)+'</div>';
+				$("#container").append(str);
+			}
+			
+		$("#container").gridalicious({width: 225,selector: 'div',gutter: 20});
+	}
+	
+	run();
+	setInterval(function(){ run(); }, 5000);
+	
+});
+
+$(document).on('click',".me",function() {alert(1);}); // ?not working!?
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>AJAX P_Koritarov
+</title><style>*{margin: 30px; border: 1px solid; text-align: center; font-size: 32px;} div{background-color: lightblue;}</style>
+<script src="jquery-2.1.4.min.js"></script>
+<script>
+$(document).ready(function(){
+
+	$.get("info.php",{type: "coffee"}, function(data){
+			//alert(JSON.stringify(data));
+			$('body').append('<div>'+JSON.stringify(data)+'</div>');
+		},'json');
+	
+	$.get("info.php",{type: "gallery", id: Math.ceil(Math.random()*6)}, function(data){
+			//alert(JSON.stringify(data));
+			$('body').append('<div>'+JSON.stringify(data)+'</div>');
+		});
+		
+	$.get("info.php",{type: "lottery"}, function(data){
+			//alert(JSON.stringify(data));
+			$('body').append('<div>'+JSON.stringify(data)+'</div>');
+		},'json');	
+});
+
+</script>
+</head>
+</html>
