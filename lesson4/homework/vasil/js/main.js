@@ -18,10 +18,14 @@ $('document').ready(function()
 	
 	$('.deleteLink').click(function(){
 		$(this).parent().remove();
+<<<<<<< HEAD
+		$(window).resize();
+=======
 
 		$("#container").gridalicious(grid_config);
 		
 		
+>>>>>>> b862f9d6f8b9721b1d0430b71dd7638a13063a07
 	}
 	)
 	
