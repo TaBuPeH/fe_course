@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+p , h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/********************** HEADER *******************/
+header {
+    background: #c41a17;
+    margin: 0;
+    padding: 24px 0 10px 0 ;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header h1 {
+    background: url("images/logo.png") no-repeat;
+    width: 148px;
+    height: 50px;
+    text-indent: -10000px;
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav h2 {
+    text-indent: -10000px;
+    height: 0;
+}
+
+header nav li {
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav li a:hover {
+    background: #3a4141;
+    border-radius: 5px;
+}
+
+/******************************* END HEADER *********************/
+
+/***************************** BANNER **************************/
+#main-banner, #main-banner img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#main-banner {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#main-banner:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.icon-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("images/icon-left.png") no-repeat center center #e24b43;
+    height: 60px;
+    width: 50px;
+    display: block;
+}
+
+.icon-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: url("images/icon-right.png") no-repeat center center #e24b43;
+    height: 60px;
+    width: 50px;
+    display: block;
+}
+
+.icon-right:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner-overlay {
+    position: absolute;
+    width: 1170px;
+    top: 82%;
+    background: rgba(0,0,0,0.5);
+    padding: 20px 0 20px 16px;
+    border-radius: 5px;
+}
+
+.banner-overlay  h2 , .banner-overlay  p {
+    color: white;
+}
+
+.banner-overlay  h2 {
+    font-size: 36px;
+    font-family: 'Lobster Two', cursive;
+}
+
+.banner-overlay  p {
+    font-size: 16px;
+}
+
+/********************************* END BANNER *********************/
+
+/************************************** SERVICES **********************/
+
+#main-content {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: #f3f3f3;
+}
+
+#services {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+#services:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.view {
+    background: #ececec;
+    border-radius: 4px;
+    padding: 26px 30px;
+    position: relative;
+}
+.view:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.view h3 {
+    width: 370px;
+    color: #da3f39;
+    font-size: 27px;
+}
+.view p {
+    font-size: 13px;
+    color: #777777;
+    width: 848px;
+}
+.view a {
+    position: absolute;
+    right: 2%;
+    top: 22%;
+    background: #2e3636;
+    width: 200px;
+    padding: 20px 5px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.view a:hover {
+    background: #e8645a;
+}
+.services-content {
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+}
+
+.services-content:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.services-content ul li {
+    width:23%;
+    height: 310px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    background: #f8f8f8;
+    padding: 36px 26px 0;
+    margin: 1%;
+    box-shadow: 0px 5px 6px #888888;
+    box-sizing: border-box;
+}
+.services-content ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.services-content ul {
+    padding: 0;
+}
+.services-content li img {
+    margin-bottom: 36px;
+}
+
+
+.services-content ul li h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.services-content ul li p {
+    font-size:  13px;
+    color: #666666;
+}
+
+.services-content ul li a {
+    background: #2e3636;
+    position: relative;
+    width: 200px ;
+    display: block;
+    padding: 20px 0;
+    top: 21%;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.services-content li a:hover{
+    background:#e8645a;
+}
+
+.services-content li:hover {
+    background: #ffffff;
+}
+
+
+/************************** END SERVICES ********************/
+
+/********************** ABOUT *********************/
+#about {
+    width: 100%;
+    border-top: 1px solid #666666;
+    margin: 0;
+    padding: 0;
+}
+
+
+.about-content {
+    margin: 0;
+    padding: 0;
+    background: url("images/fe_exam.png") no-repeat;
+    text-align: right;
+}
+.about-content h3 {
+    font-size: 27px;
+    color: #da3f39;
+    text-align: right;
+}
+/************* MEDIA QUERIES *********************/
+
+@media screen and (max-width: 640px) and (min-width: 320px) {
+
+
+    header nav {
+        float:none;
+        clear:left;
+    }
+
+    header nav li {
+        width:100%;
+        text-align:center;
+        margin:0;
+        padding:0;
+        line-height:1.8em;
+    }
+
+    header h1 {
+        float:none;
+        margin:0 auto 10px;
+    }
+
+    .services-content ul li {
+        width:48%;
+
+    }
+
+    .banner-overlay {
+        top:40%
+    }
+
+    .icon-right {
+        top:81%
+    }
+
+    .icon-left {
+        top:81%
+    }
+    .view{
+        padding-bottom:80px
+    }
+
+    .view a {
+        top:55%
+    }
+    .view p {
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
